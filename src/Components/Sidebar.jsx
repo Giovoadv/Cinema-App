@@ -40,33 +40,33 @@ const Sidebar = () => {
 
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
-            <NavLink exact to="/" className="active">
+            <NavLink to="/" className="active">
               <CDBSidebarMenuItem className="menuItem" icon="columns">
-                <CDBSidebarMenuItem>Dashboard</CDBSidebarMenuItem>
+                Dashboard
               </CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/tables" className="active">
+            <NavLink to="/tables" className="active">
               <CDBSidebarMenuItem className="menuItem" icon="table">
-                <CDBSidebarMenuItem>Tables</CDBSidebarMenuItem>
+                Tables
               </CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/profile" className="active">
+            <NavLink to="/profile" className="active">
               <CDBSidebarMenuItem className="menuItem" icon="user">
-                <CDBSidebarMenuItem>Profile Page</CDBSidebarMenuItem>
+                Profile Page
               </CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/analytics" className="active">
+            <NavLink to="/analytics" className="active">
               <CDBSidebarMenuItem className="menuItem" icon="chart-line">
-                <CDBSidebarMenuItem>Analytics</CDBSidebarMenuItem>
+                Analytics
               </CDBSidebarMenuItem>
             </NavLink>
 
-            <NavLink exact to="/hero404" target="_blank" className="active">
+            <NavLink to="/hero404" target="_blank" className="active">
               <CDBSidebarMenuItem
                 className="menuItem"
                 icon="exclamation-circle"
               >
-                <CDBSidebarMenuItem>404 Page</CDBSidebarMenuItem>
+                404 Page
               </CDBSidebarMenuItem>
             </NavLink>
           </CDBSidebarMenu>

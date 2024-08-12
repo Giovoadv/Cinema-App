@@ -5,7 +5,7 @@
 }
 
 #carouselExampleSlidesOnly{
-    width: 80vw;
+    width: 60vw;
     display: flex;
     place-content: center;
 }

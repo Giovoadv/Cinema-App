@@ -6,6 +6,7 @@ import Popper from "popper.js";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Sidebar from "./Components/Sidebar";
 import { BrowserRouter as Router } from "react-router-dom";
+import FeaturedMovies from "./Components/FeaturedMovies";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         <CinemaNavbar />
         <section className="carousel-wrapper">
           <Carousel />
+        </section>
+        <section>
+          <FeaturedMovies />
         </section>
       </section>
     </div>
