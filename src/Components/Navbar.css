@@ -1,0 +1,39 @@
+.NavWrapper {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* border: 0.1px solid #38393a; */
+  
+}
+
+
+.title {
+  flex: 1;
+  text-align: center;
+  place-content: center;
+  color: red;
+  font-size: xx-large;
+  border-bottom: 0.1px solid #38393a;
+}
+.dropDown-wrapper {
+    text-align: center;
+    place-content: center;
+    flex: 0.2;
+    border-bottom: 0.1px solid #38393a;
+}
+.dropDown {
+  border: none;
+  background: linear-gradient(42deg, #723e7b 10.2%, #9b2352 82.74%);
+  color: rgb(134, 132, 132);
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  text-align: center;
+}
+option {
+  color: black;
+  background-color: white;
+  
+}

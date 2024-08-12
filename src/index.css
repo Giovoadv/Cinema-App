@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(29, 28, 28);
+  margin: 0;
+  padding: 0;
+}
+
+.appWrapper {
+  display: flex;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}

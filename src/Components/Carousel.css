@@ -1,0 +1,11 @@
+
+
+.carousel-item {
+  display: flex;
+}
+
+#carouselExampleSlidesOnly{
+    width: 80vw;
+    display: flex;
+    place-content: center;
+}
