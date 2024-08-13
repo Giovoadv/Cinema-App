@@ -1,0 +1,51 @@
+/* Container for movie posters */
+.movie-poster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center; /* Center items if needed */
+}
+
+/* Style for individual movie wrapper */
+.img-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  border-radius: 8px;
+  padding: 1rem;
+  width: 20rem;
+  text-align: center;
+}
+
+.img-wrapper img {
+  flex: 1;
+
+  border-radius: 4px;
+}
+
+/* Style for movie titles */
+.movie-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: rgb(92, 89, 89);
+}
+
+/* Style for movie overview */
+.movie-overview {
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Style for featured movies section (if needed) */
+.featuredMovies {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 10rem;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: x-large;
+}

@@ -11,7 +11,7 @@ const Carousel = () => {
       <div className="carousel-inner" id="carouselId">
         <div className="carousel-item active">
           <img
-            src="/src/assets/Deadpool&Wolverine.jpg"
+            src="/src/assets/MoviesImages/Deadpool&Wolverine.jpg"
             className="d-block w-100"
             alt="..."
           />

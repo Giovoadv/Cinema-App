@@ -4,23 +4,23 @@
   display: flex;
   justify-content: center;
   /* border: 0.1px solid #38393a; */
-  
 }
-
 
 .title {
   flex: 1;
   text-align: center;
   place-content: center;
   color: red;
-  font-size: xx-large;
+  font-size: 3rem;
   border-bottom: 0.1px solid #38393a;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
 }
 .dropDown-wrapper {
-    text-align: center;
-    place-content: center;
-    flex: 0.2;
-    border-bottom: 0.1px solid #38393a;
+  text-align: center;
+  place-content: center;
+  flex: 0.2;
+  border-bottom: 0.1px solid #38393a;
 }
 .dropDown {
   border: none;
@@ -35,5 +35,4 @@
 option {
   color: black;
   background-color: white;
-  
 }

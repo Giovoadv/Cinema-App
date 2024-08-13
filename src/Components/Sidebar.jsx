@@ -10,13 +10,13 @@ import {
 import { NavLink } from "react-router-dom";
 import "../Components/Sidebar.css";
 
-const Sidebar = () => {
+const Sidebar = ({ handleClick }) => {
   return (
     <div
       className="sidebar"
       style={{
         display: "flex",
-        height: "100vh",
+        height: "100%",
         overflow: "scroll initial",
         hover: "#ffff",
       }}
@@ -40,33 +40,40 @@ const Sidebar = () => {
 
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
-            <NavLink to="/" className="active">
-              <CDBSidebarMenuItem className="menuItem" icon="columns">
-                Dashboard
-              </CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink to="/tables" className="active">
-              <CDBSidebarMenuItem className="menuItem" icon="table">
-                Tables
-              </CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink to="/profile" className="active">
-              <CDBSidebarMenuItem className="menuItem" icon="user">
-                Profile Page
-              </CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink to="/analytics" className="active">
-              <CDBSidebarMenuItem className="menuItem" icon="chart-line">
-                Analytics
-              </CDBSidebarMenuItem>
-            </NavLink>
-
-            <NavLink to="/hero404" target="_blank" className="active">
+            <NavLink to="#" className="active">
               <CDBSidebarMenuItem
+                onClick={(e) => handleClick(e, "now_playing")}
                 className="menuItem"
-                icon="exclamation-circle"
+                icon="columns"
               >
-                404 Page
+                Now Playing
+              </CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink to="#" className="active">
+              <CDBSidebarMenuItem
+                onClick={(e) => handleClick(e, "popular")}
+                className="menuItem"
+                icon="table"
+              >
+                Popular
+              </CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink to="#" className="active">
+              <CDBSidebarMenuItem
+                onClick={(e) => handleClick(e, "top_rated")}
+                className="menuItem"
+                icon="user"
+              >
+                Top Rate
+              </CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink to="#" className="active">
+              <CDBSidebarMenuItem
+                onClick={(e) => handleClick(e, "upcoming")}
+                className="menuItem"
+                icon="chart-line"
+              >
+                Upcoming
               </CDBSidebarMenuItem>
             </NavLink>
           </CDBSidebarMenu>

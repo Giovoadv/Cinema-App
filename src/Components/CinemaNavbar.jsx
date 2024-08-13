@@ -1,12 +1,11 @@
 import React from "react";
-
 import "../Components/Navbar.css";
+
 
 const CinemaNavbar = () => {
   return (
     <div className="NavWrapper">
-      
-      <div className="title">Cinema</div>
+      <div className="title">Cinema </div>
 
       <div className="dropDown-wrapper">
         <select className="dropDown">

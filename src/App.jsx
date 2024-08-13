@@ -1,19 +1,24 @@
 import CinemaNavbar from "./Components/CinemaNavbar";
 import Carousel from "./Components/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
-import $ from "jquery";
-import Popper from "popper.js";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Sidebar from "./Components/Sidebar";
 import { BrowserRouter as Router } from "react-router-dom";
 import FeaturedMovies from "./Components/FeaturedMovies";
+import { useState } from "react";
 
 function App() {
+  const [movieType, setMovieType] = useState("now_playing");
+  const handleClick = (e, value) => {
+    e.preventDefault();
+    setMovieType(value);
+    console.log("click ", value);
+  };
   return (
     <div className="appWrapper">
       <section>
         <Router>
-          <Sidebar />
+          <Sidebar handleClick={handleClick} />
         </Router>
       </section>
       <section className="content-wrapper">
@@ -22,7 +27,7 @@ function App() {
           <Carousel />
         </section>
         <section>
-          <FeaturedMovies />
+          <FeaturedMovies movieType={movieType} />
         </section>
       </section>
     </div>
