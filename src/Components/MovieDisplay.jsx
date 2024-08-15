@@ -4,7 +4,7 @@ import "./MovieDisplay.css";
 const imgPath = "https://image.tmdb.org/t/p/w500";
 
 const MovieDisplay = ({ movies, titleChange, handleClick }) => {
-  const [limit, setLimit] = useState(8);
+  const [limit, setLimit] = useState(10);
 
   if (!movies || movies.length === 0) return <p>No movies available.</p>;
 
