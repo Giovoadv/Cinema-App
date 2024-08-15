@@ -82,5 +82,5 @@
 }
 
 .movieTypeButton:last-child:hover {
-  background-image: url("public/pexels-neosiam-603580.jpg");
+  background-image: url("/public/pexels-neosiam-603580.jpg");
 }
