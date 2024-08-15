@@ -9,6 +9,7 @@ import {
 } from "cdbreact";
 import { NavLink } from "react-router-dom";
 import "../Components/Sidebar.css";
+import GradientIcon from "./GradientIcon";
 
 const Sidebar = ({ handleClick }) => {
   return (
@@ -53,7 +54,7 @@ const Sidebar = ({ handleClick }) => {
               <CDBSidebarMenuItem
                 onClick={(e) => handleClick(e, "popular")}
                 className="menuItem"
-                icon="table"
+                icon="film"
               >
                 Popular
               </CDBSidebarMenuItem>
@@ -62,7 +63,7 @@ const Sidebar = ({ handleClick }) => {
               <CDBSidebarMenuItem
                 onClick={(e) => handleClick(e, "top_rated")}
                 className="menuItem"
-                icon="user"
+                icon="film"
               >
                 Top Rate
               </CDBSidebarMenuItem>
@@ -85,7 +86,7 @@ const Sidebar = ({ handleClick }) => {
               padding: "20px 5px",
             }}
           >
-            Sidebar Footer
+            <GradientIcon />
           </div>
         </CDBSidebarFooter>
       </CDBSidebar>

@@ -5,11 +5,12 @@ import MovieDisplay from "./MovieDisplay";
 // const apiKey = "354c4bb7";
 const apiKeyTwo = "api_key=db95773a7fb212ba790d71f6adac0e7e";
 
-const FeaturedMovies = ({movieType}) => {
+const FeaturedMovies = ({ movieType, handleClick }) => {
   const [movies, setMovies] = useState([]);
+  const [titleChange, setTitleChange] = useState("");
 
   const getMovie = async (type) => {
-    console.log(movieType)
+    console.log(movieType);
     try {
       const res = await axios.get(
         `https://api.themoviedb.org/3/movie/${type}?${apiKeyTwo}`
@@ -25,11 +26,19 @@ const FeaturedMovies = ({movieType}) => {
 
   useEffect(() => {
     getMovie(movieType);
+
+    const titles = {
+      now_playing: "Now Playing",
+      popular: "Popular",
+      top_rated: "Top Rated",
+      upcoming: "Upcoming",
+    };
+    setTitleChange(titles[movieType] || "FEATURED MOVIES");
   }, [movieType]);
 
   return (
     <div>
-      <MovieDisplay movies={movies} />
+      <MovieDisplay movies={movies} titleChange={titleChange} handleClick={handleClick} />
     </div>
   );
 };

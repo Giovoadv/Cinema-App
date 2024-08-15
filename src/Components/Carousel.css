@@ -2,6 +2,8 @@
 
 .carousel-item {
   display: flex;
+  margin-top: 1.5rem;
+  padding-top: 100px;
 }
 
 #carouselExampleSlidesOnly{
