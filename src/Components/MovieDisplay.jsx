@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./MovieDisplay.css";
-
 const imgPath = "https://image.tmdb.org/t/p/w500";
 
 const MovieDisplay = ({ movies, titleChange, handleClick }) => {
