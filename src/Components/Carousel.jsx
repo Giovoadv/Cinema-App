@@ -1,5 +1,6 @@
 import React from "react";
 import "../Components/Carousel.css";
+import deadpool from '../assets/MoviesImages/Deadpool&Wolverine.jpg'
 
 const Carousel = () => {
   return (
@@ -11,7 +12,7 @@ const Carousel = () => {
       <div className="carousel-inner" id="carouselId">
         <div className="carousel-item active">
           <img
-            src="src/assets/MoviesImages/Deadpool&Wolverine.jpg"
+            src={deadpool}
             className="d-block w-100"
             alt="..."
           />
